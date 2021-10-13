@@ -1,2 +1,73 @@
+@font-face {
+  font-family: 'Chomsky';
+  src: url("Chomsky.otf") format("opentype"),
+  url('Chomsky.woff') format('woff'); /* Pretty Modern Browsers */
+}
 
-/* css */
+h1 {
+  font-family: 'Chomsky', 'Goudy Old Style';
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Goudy Old Style';
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Georgia';
+}
+
+h3 {
+  font-family: 'Arial';
+  color: red;
+  font-size: 75%;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+ol {
+  font-family:'Georgia'
+}
+
+.buffer {
+  padding-bottom: 2%;
+}
+
+/* Thank you to W3School for the code below. */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1% 8%;
+  transition: 0.3s;
+  font-family: 'Arial';
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 5% 5% 5% 5%;
+  border: 1px solid #ccc;
+}

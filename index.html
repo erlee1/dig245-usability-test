@@ -1,26 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!-- meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>DIG 245 Usability Test</title>
+  <title>DIG 245 Usability Test</title>
 
-<!-- CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/styles.css">
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
 
+  <div class="container">
+    <div class="buffer"></div>
+    <!-- visible content goes here -->
+    <h1>The New York Times<br>
+      Usability Test</h1>
 
-<!-- visible content goes here -->
-<h1>DIG 245 Usability Test</h1>
+    <div class="buffer"></div>
 
+    <div class="row">
 
-<!-- javascript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-<script src="assets/js/main.js"></script>
+      <div class="tab">
+        <button class="tablinks" onclick="openTask(event, 'taskOne')">Task 1</button>
+        <button class="tablinks" onclick="openTask(event, 'taskTwo')">Task 2</button>
+        <button class="tablinks" onclick="openTask(event, 'taskThree')">Task 3</button>
+        <button class="tablinks" onclick="openTask(event, 'taskFour')">Task 4</button>
+        <button class="tablinks" onclick="openTask(event, 'taskFive')">Task 5</button>
+      </div>
+
+      <!-- Tab content -->
+      <div class="buffer"></div>
+      <div class="col-2"></div>
+
+      <div id="taskOne" class="tabcontent col-8">
+        <h2>Task 1: Find today's crossword</h2>
+        <ol>
+          <li>Opened left sidebar</li>
+          <li>Scrolled through the sections</li>
+          <li>Found games under "Living"</li>
+        </ol>
+        <p><b>Time spent:</b> 13 seconds</p>
+
+        <p>User completed the task pretty easily,
+          especially because she had an idea of where to find the crossword games.
+          The menu bars were helpful with the different sections highlighted.</p>
+      </div>
+
+      <div id="taskTwo" class="tabcontent col-8">
+        <h2>Task 2: Find the terms of service</h2>
+        <ol>
+          <li>Opened left sidebar</li>
+          <li>Scrolled through briefly, closed it</li>
+          <li>Clicked back button</li>
+          <li>Tried to scroll all the way down homepage</li>
+          <li>Gave up, scrolled back up</li>
+          <li>Clicked Account button, closed it</li>
+          <li>Opened left sidebar</li>
+          <li>Clicked “Tools and Services” header</li>
+          <li>Scrolled down</li>
+          <li>Found Terms and Services at the bottom </li>
+        </ol>
+        <p><b>Time spent:</b> 55 seconds</p>
+
+        <p>This took the longest time out of all the tasks. User kept scrolling
+          to the bottom, but more and more articles kept loading instead of
+          getting to the bottom of the screen. Finding this was especially
+          frustrating. </p>
+
+        <p><b>Recommendations</b>: The New York Times could include a clear
+          but nonintrusive button in the lower right corner that, when clicked,
+          takes the user to the bottom of the website.
+      </div>
+
+      <div id="taskThree" class="tabcontent col-8">
+        <h2>Task 3: Find the trending page</h2>
+        <ol>
+          <li>Thought the homepage might be trending page</li>
+          <li>Went to homepage by clicking logo</li>
+          <li>Couldn’t find search bar there</li>
+          <li>Opened left sidebar, found search bar</li>
+          <li>Searched “Trending”</li>
+        </ol>
+        <p><b>Time spent:</b> 30 seconds</p>
+
+        <p>The intended way to find the trending page is different.
+          The trending button is buried in the left sidebar. It’s not intuitive in a way
+          a user might expect it to be. </p>
+
+        <p><b>Recommendations</b>: The trending button should be included on the
+          navigational bar. Also, the search bar should be available at
+          the top of every page.
+      </div>
+
+      <div id="taskFour" class="tabcontent col-8">
+        <h2>Task 4: Find yesterday's paper</h2>
+        <ol>
+          <li>Opened left sidebar</li>
+          <li>Looked at “News” section</li>
+          <li>Saw (but didn’t click) “Today’s Paper”</li>
+          <li>Scrolled down, looked at “Listings and more” section</li>
+          <li>Scrolled up again, clicked “Today’s Paper” </li>
+          <li>Opened calendar at the top</li>
+          <li>Clicked “26th”
+        </ol>
+        <p><b>Time spent:</b> 34 seconds</p>
+      </div>
+
+      <div id="taskFive" class="tabcontent col-8">
+        <h2>Task 5: Go back to the homepage</h2>
+        <ol>
+          <li>Clicked on NYT Logo at top of page</li>
+        </ol>
+        <p><b>Time spent:</b> 1 second</p>
+      </div>
+    </div>
+
+    <div class="buffer"></div>
+
+    <div class="row">
+      <div class="col-2" style="padding: 1% 10%;"></div>
+      <div class="col-5">
+        <h3>LIVE</h3>
+        <h2>What is a usability test?</h2>
+        <p>A usability test is a way to center real users in the user interface
+          design process. Researchers give a representative group of these users
+          a digital product, such as a website or app, and a series of tasks that
+          can be completed with its functions. They observe the users as they
+          attempt these tasks, taking note of what functions they struggle with,
+          what they find intuitive, how long it takes to complete the task, and
+          so on. Above are the results of the New York Times usability Test
+          conducted by Erina Lee and Evan Rothman, with Emily Schmitt as the user.
+          You can toggle between the results of each task on the navigational bar
+          above.</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
