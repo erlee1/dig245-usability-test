@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-  <!-- meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>DIG 245 Usability Test</title>
 
-  <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -17,11 +15,8 @@
 
   <div class="container">
     <div class="buffer"></div>
-    <!-- visible content goes here -->
-    <h1>The New York Times<br>
-      Usability Test</h1>
-
-    <div class="buffer"></div>
+    <h1><a href="#" onclick="window.location.reload(true);">The New York Times<br>
+        Usability Test</a></h1>
 
     <div class="row">
 
@@ -33,12 +28,12 @@
         <button class="tablinks" onclick="openTask(event, 'taskFive')">Task 5</button>
       </div>
 
-      <!-- Tab content -->
-      <div class="buffer"></div>
+      <hr>
       <div class="col-2"></div>
 
       <div id="taskOne" class="tabcontent col-8">
-        <h2>Task 1: Find today's crossword</h2>
+        <h2>Task 1: Find today's crossword
+        <img src="assets/img/task1.png" width="30%" height="30%"></h2>
         <ol>
           <li>Opened left sidebar</li>
           <li>Scrolled through the sections</li>
@@ -46,13 +41,15 @@
         </ol>
         <p><b>Time spent:</b> 13 seconds</p>
 
-        <p>User completed the task pretty easily,
-          especially because she had an idea of where to find the crossword games.
-          The menu bars were helpful with the different sections highlighted.</p>
+        <p>The user completed the task with relative ease,
+          as she already had an idea of where to find the crossword games
+          due to her familiarity with similar sites. The menu bars were helpful since
+          they highlighted the different sections.</p>
       </div>
 
       <div id="taskTwo" class="tabcontent col-8">
-        <h2>Task 2: Find the terms of service</h2>
+        <h2>Task 2: Find the terms of service
+        <img src="assets/img/task2.png" width="50%" height="50%"></h2>
         <ol>
           <li>Opened left sidebar</li>
           <li>Scrolled through briefly, closed it</li>
@@ -67,10 +64,9 @@
         </ol>
         <p><b>Time spent:</b> 55 seconds</p>
 
-        <p>This took the longest time out of all the tasks. User kept scrolling
-          to the bottom, but more and more articles kept loading instead of
-          getting to the bottom of the screen. Finding this was especially
-          frustrating. </p>
+        <p>The user found this task frustrating and confusing. The more she scrolled
+          down the homepage, the more articles it loaded for her instead of taking
+          her to the bottom. </p>
 
         <p><b>Recommendations</b>: The New York Times could include a clear
           but nonintrusive button in the lower right corner that, when clicked,
@@ -78,7 +74,8 @@
       </div>
 
       <div id="taskThree" class="tabcontent col-8">
-        <h2>Task 3: Find the trending page</h2>
+        <h2>Task 3: Find the trending page
+        <img src="assets/img/task3.png" width="40%" height="40%"></h2>
         <ol>
           <li>Thought the homepage might be trending page</li>
           <li>Went to homepage by clicking logo</li>
@@ -98,7 +95,8 @@
       </div>
 
       <div id="taskFour" class="tabcontent col-8">
-        <h2>Task 4: Find yesterday's paper</h2>
+        <h2>Task 4: Find yesterday's paper
+        <img src="assets/img/task4.png" width="30%" height="30%"></h2>
         <ol>
           <li>Opened left sidebar</li>
           <li>Looked at “News” section</li>
@@ -109,14 +107,27 @@
           <li>Clicked “26th”
         </ol>
         <p><b>Time spent:</b> 34 seconds</p>
+
+        <p>The user did not immediately recognize that clicking "Today's Paper" would lead
+          her to a page in which she could change the date of the paper.</p>
+
+        <p><b>Recommendations:</b> The New York Times could include a small but
+          noticeable button or link in the shape of an arrow facing left from "Today's"
+          Paper." This would easily allow the user to click through previous papers
+          without having to use the calender function.</p>
       </div>
 
       <div id="taskFive" class="tabcontent col-8">
-        <h2>Task 5: Go back to the homepage</h2>
+        <h2>Task 5: Go back to the homepage
+        <img src="assets/img/task5.png" width="60%" height="60%"></h2>
         <ol>
           <li>Clicked on NYT Logo at top of page</li>
         </ol>
         <p><b>Time spent:</b> 1 second</p>
+
+        <p>As per web design conventions, the large, noticeable
+          logo leads to the homepage when clicked. The title of this webpage
+          does the same. Try it out!</p>
       </div>
     </div>
 
@@ -124,8 +135,8 @@
 
     <div class="row">
       <div class="col-2" style="padding: 1% 10%;"></div>
-      <div class="col-5">
-        <h3>LIVE</h3>
+      <div class="col-7">
+        <h3>ABOUT</h3>
         <h2>What is a usability test?</h2>
         <p>A usability test is a way to center real users in the user interface
           design process. Researchers give a representative group of these users
@@ -133,7 +144,7 @@
           can be completed with its functions. They observe the users as they
           attempt these tasks, taking note of what functions they struggle with,
           what they find intuitive, how long it takes to complete the task, and
-          so on. Above are the results of the New York Times usability Test
+          so on. Above are the results of the New York Times usability test
           conducted by Erina Lee and Evan Rothman, with Emily Schmitt as the user.
           You can toggle between the results of each task on the navigational bar
           above.</p>
